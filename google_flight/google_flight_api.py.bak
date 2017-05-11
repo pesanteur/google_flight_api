@@ -1,6 +1,4 @@
 from __future__ import print_function
-from builtins import str
-from builtins import object
 import requests
 import json
 
@@ -18,7 +16,7 @@ __version__ = "0.1"
 URL = 'https://www.googleapis.com/qpxExpress/v1/trips/search'
 headers = {'Content-Type': 'application/json'}
 
-class Struct(object):
+class Struct:
     def __init__(self, **entries):
         self.__dict__.update(entries)
 
